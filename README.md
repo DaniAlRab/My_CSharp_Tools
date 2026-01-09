@@ -22,3 +22,9 @@ Class:
 
 
 
+
+
+call it as string
+
+ string IDTest = SecureIdGenerator.GenerateId();
+
