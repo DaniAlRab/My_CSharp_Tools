@@ -4,7 +4,7 @@ Class:
 
         public static class SecureIdGenerator
         {
-            private const string Chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; //characters used for generate
+            private const string Chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; //characters used for generate ID 
 
             public static string GenerateId(int length = 5)
             {
