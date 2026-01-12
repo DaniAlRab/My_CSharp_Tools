@@ -4,7 +4,7 @@ Class:
 
         public static class SecureIdGenerator
         {
-            private const string Chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            private const string Chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; //characters used for generate
 
             public static string GenerateId(int length = 5)
             {
@@ -27,4 +27,10 @@ Class:
 call it as string
 
  string IDTest = SecureIdGenerator.GenerateId();
+
+
+
+
+
+ 
 
