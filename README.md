@@ -107,9 +107,9 @@ this.Controls.Add(myRotatedLabel);
 
 
  
-## Delay without freeze system - Task Delay
+### Delay without freeze system - Task Delay
 
-Declare a function with "async" Option, use the Task.Delay(); inside of it 
+ - Declare a function with "async" Option, use the Task.Delay(); inside of it 
 
 
 ``` C#
