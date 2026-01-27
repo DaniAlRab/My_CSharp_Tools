@@ -25,7 +25,7 @@
 
 
 
- - Call it as string
+ - Call it as a string
 ```C#
  string IDTest = SecureIdGenerator.GenerateId();
 ````
@@ -57,12 +57,12 @@ timer3.Start(); // Start Timer
 	
 		this.BeginInvoke((Action)(() =>
 	{                     
-	 //put here something to execute in high speed
+	 //put here something to execute at high speed
 	   
 	}));
 	
 	 time3 += 0.05; // Increase time (50 ms)
-	 //this variable increase value could be used to simulate a chronometer inside of code to make simple math operations based on elapsed time;
+	 //this variable increase value could be used to simulate a chronometer inside the code to make simple math operations based on elapsed time;
 	 
 	
 	 }
@@ -73,7 +73,7 @@ timer3.Start(); // Start Timer
  - Create a Class 
 
 ``` C#
-public class RotatedLabel : System.Windows.Forms.Label
+public class RotatedLabel: System.Windows.Forms.Label
 {
 	public int RotateAngle { get; set; } = 0; // Default to no rotation
 	public string NewText { get; set; } = "";
@@ -94,7 +94,7 @@ public class RotatedLabel : System.Windows.Forms.Label
 
 ```
 
- - Put it on constructor
+ - Put it in the constructor
 ```C#
 RotatedLabel myRotatedLabel = new RotatedLabel();
 myRotatedLabel.Font = new Font("Arial", 16, System.Drawing.FontStyle.Bold);
@@ -107,7 +107,26 @@ this.Controls.Add(myRotatedLabel);
 
 
  
+## Delay without freeze system - Task Delay
 
+Declare a function with "async" Option, use the Task.Delay(); inside of it 
+
+
+``` C#
+        public async void Test_ClickAsync(object sender, EventArgs e)
+        {
+
+            await Task.Delay(TimeSpan.FromMilliseconds(100)); 
+
+            await Task.Delay(TimeSpan.FromMicroseconds(1000));
+
+         	await Task.Delay(TimeSpan.FromSeconds(1)); //using with seconds
+
+            await Task.Delay(TimeSpan.FromMinutes(1));  // using with minutes
+
+            await Task.Delay(TimeSpan.FromHours(1)); //
+
+        }
 
 
 
