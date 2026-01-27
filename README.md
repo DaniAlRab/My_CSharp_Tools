@@ -113,18 +113,19 @@ this.Controls.Add(myRotatedLabel);
 
 
 ``` C#
+			//*async*
         public async void Test_ClickAsync(object sender, EventArgs e)
         {
 
-            await Task.Delay(TimeSpan.FromMilliseconds(100)); 
+            await Task.Delay(TimeSpan.FromMilliseconds(100)); //using with miliseconds 
 
-            await Task.Delay(TimeSpan.FromMicroseconds(1000));
+            await Task.Delay(TimeSpan.FromMicroseconds(1000)); //using with microseconds
 
          	await Task.Delay(TimeSpan.FromSeconds(1)); //using with seconds
 
             await Task.Delay(TimeSpan.FromMinutes(1));  // using with minutes
 
-            await Task.Delay(TimeSpan.FromHours(1)); //
+            await Task.Delay(TimeSpan.FromHours(1)); //using with hours
 
         }
 
